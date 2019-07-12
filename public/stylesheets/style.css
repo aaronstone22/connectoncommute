@@ -1,8 +1,10 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 7px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://www.masstlc.org/wp-content/uploads/Panoramic-View-of-theBoston-Skyline-Across-the-Charles-River-Bas-000026164130_Large.jpg");
+  background-size: 98%;
+  position: relative;
 }
 
 a {
   color: #00B7FF;
-}

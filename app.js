@@ -87,6 +87,7 @@ app.get('/loginerror', function(req,res){
   res.render('loginerror',{})
 })
 
+
 app.get('/login', function(req,res){
   res.render('login',{})
 })
@@ -143,6 +144,10 @@ app.get('/editProfile',isLoggedIn, (req,res)=>{
   res.render('editProfile')
 })
 
+app.get('/mission', (req,res)=>{
+  res.render('mission')
+})
+
 app.get('/profiles', isLoggedIn, profileController.getAllProfiles);
 app.get('/showProfile/:id', isLoggedIn, profileController.getOneProfile);
 
@@ -189,8 +194,8 @@ app.get('/griddemo', function(req, res, next) {
 
 
 
-app.get('/bmidemo', (req, res) => {
-  res.render('bmidemo',{title:"BMI Demo"});
+app.get('/guide', (req, res) => {
+  res.render('guide',{title:"guide"});
 });
 
 
