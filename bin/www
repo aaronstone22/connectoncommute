@@ -11,9 +11,13 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
-
-var port = normalizePort(process.env.PORT || '5500');
+//regular port info
+var port = normalizePort(process.env.PORT || 8080);
 app.set('port', port);
+
+//heroku port info
+// const port = process.env.PORT || 4000;
+app.listen(5000);
 
 /**
  * Create HTTP server.

@@ -25,6 +25,11 @@ const commentController = require('./controllers/commentController')
 const profileController = require('./controllers/profileController')
 const forumPostController = require('./controllers/forumPostController')
 const quiz2Controller = require('./controllers/quiz2Controller')
+
+//port info
+// var port = normalizePort(process.env.PORT || 5500);
+// app.set('port', port);
+//port info
 // Authentication
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 // here we set up authentication with passport
