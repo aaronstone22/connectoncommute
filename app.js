@@ -172,7 +172,7 @@ app.use(function(req,res,next){
 
 
 app.get('/', function(req, res, next) {
-  res.render('index',{title:"YellowCartwheel"});
+  res.render('index',{title:"ConnectOnCommute"});
 });
 
 app.get('/quiz2',quiz2Controller.getAllMovieRatings)
