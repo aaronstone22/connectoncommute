@@ -145,6 +145,10 @@ app.get('/profile', isLoggedIn, function(req, res) {
         res.render('profile')
     });
 
+app.get('/quiz1', function(req,res){
+    res.render('quiz1')
+  });
+
 app.get('/editProfile',isLoggedIn, (req,res)=>{
   res.render('editProfile')
 })
