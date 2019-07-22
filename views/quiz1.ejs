@@ -1,142 +1,118 @@
 <%- include('bootheader') -%>
-
 <%- include('menubar') -%>
-
+<style>
+.white-bg{
+  background:#ffffff !important;
+}
+</style>
     <div class="jumbotron">
-
         <h1>CS152aj Quiz 1</h1>
-
         <p>Write the HTML with Bootstrap to create this page. You can make your page in YellowCartwheel</p>
-
     </div>
-
-
 
     <div class="container">
 
-
-
       <div class="row">
-
-        <div class="col-xs-11">
-
+        <div class="col-md">
           <h1> 1</h1>
-
           Write the HTML with Bootstrap to create this page. You can make your page in YellowCartwheel
-
         </div>
-
-        <div class="col-md col-sm-4">
-
+        <div class="col-md">
           <h1> 2</h1>
-
           Write the HTML with Bootstrap to create this page. You can make your page in YellowCartwheel
-
         </div>
-
-        <div class="col-xs">
-
+        <div class="col-md">
           <h1> 3</h1>
-
           Write the HTML with Bootstrap to create this page. You can make your page in YellowCartwheel
-
         </div>
 
-
-
-        <div class="col-md col-sm-2">
-
+        <div class="col-md">
           <h1> 4</h1>
-
           Write the HTML with Bootstrap to create this page. You can make your page in YellowCartwheel
-
         </div>
-
-        <div class="col-md col-sm-4">
-
+        <div class="col-md">
           Write the HTML with Bootstrap to create this page. You can make your page in YellowCartwheel
-
           <h1> 5</h1>
 
-
-
         </div>
-
         <div class="col-md col-sm-6">
-
           <h1> 6</h1>
-
           Write the HTML with Bootstrap to create this page. You can make your page in YellowCartwheel
-
         </div>
 
-
-
       </div>
-
-
-
-      <div class="row">
-
-        <h1>Personal Info </h1>
-
-        <div class="row">
-
-          <div class="form-group">
-
-
-
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="enter name">
-
-
-
-
-
-      </div>
-
-        </div>
-
-
-
-
-
-
-
-      </div>
-
-
 
       <div class="row">
 
 
+          <div class="col-lg form-group">
+              <h1>Personal Info </h1>
+              <div class= "row">
+                <div class = "col-md">
+                  <h2>Name</h2>
+                  </div>
+                <div class = "col-md">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="enter name">
+                  </div>
+                </div>
 
-        <div class="col-md col-sm-2">
+              <div class = "row">
+                <div class = col-md>
+                  <h2>Birthday</h2>
+                  </div>
+                <div class = col-md>
+                <input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime">
+
+                <script type="text/javascript">
+                  $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+                </script>
+                </div>
+
+
+                  </div>
+
+              <div class = "row">
+                <div class = "col-md">
+                  <h2>Gender</h2>
+                  </div>
+                  <div class = "col-md">
+                    <div class="form-check">
+                      <div class = "row">
+                      <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                      Male
+                      </div>
+                      <div class = "row">
+                      <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                      Female
+                      </div>
+                      <div class = "row">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                        Other
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
 
 
 
-        </div>
-
-        <div class="col-md col-sm-4">
+              </div>
 
 
 
-        </div>
 
+              <div class="form-group col-lg">
 
+              <h1>Short Bio<h1>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4", columns = 4></textarea>
+              <button type="button" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-warning">Reset</button>
+              <button type="button" class="btn btn-danger">Save</button>
+              </div>
 
-          <div class="form-group">
+            </div>
+          </div>
 
-      <h1>Short Bio<h1>
-
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="4", columns = 4></textarea>
-
-      <button type="button" class="btn btn-primary">Submit</button>
-
-      <button type="button" class="btn btn-warning">Reset</button>
-
-      <button type="button" class="btn btn-danger">Save</button>
-
-    </div>
 
 
 
@@ -146,8 +122,8 @@
 
 
 
+
+
     </div>
-
-
 
 <%- include('bootfooter') -%>
